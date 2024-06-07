@@ -1,0 +1,22 @@
+{
+    "read_files": "[ /mnt/sdb1/BENCOS_2023/BRS-01112023-0001-TR/01_cleanData/H2_trimmed_R1.fastq.gz, /mnt/sdb1/BENCOS_2023/BRS-01112023-0001-TR/01_cleanData/H2_trimmed_R2.fastq.gz]",
+    "expected_format": "ISR",
+    "compatible_fragment_ratio": 1.0,
+    "num_compatible_fragments": 33002529,
+    "num_assigned_fragments": 33002529,
+    "num_frags_with_concordant_consistent_mappings": 25651642,
+    "num_frags_with_inconsistent_or_orphan_mappings": 7779212,
+    "strand_mapping_bias": 0.000004405156684211275,
+    "MSF": 0,
+    "OSF": 0,
+    "ISF": 113,
+    "MSR": 0,
+    "OSR": 0,
+    "ISR": 25651642,
+    "SF": 6056588,
+    "SR": 1722511,
+    "MU": 0,
+    "OU": 0,
+    "IU": 0,
+    "U": 0
+}

@@ -1,0 +1,12 @@
+{
+    "salmon_version": "1.10.2",
+    "libType": "A",
+    "threads": "8",
+    "seqBias": [],
+    "gcBias": [],
+    "mates1": "/mnt/sdb1/BENCOS_2023/BRS-01112023-0001-TR/01_cleanData/T1_trimmed_R1.fastq.gz",
+    "mates2": "/mnt/sdb1/BENCOS_2023/BRS-01112023-0001-TR/01_cleanData/T1_trimmed_R2.fastq.gz",
+    "output": "03_quant_new/T1",
+    "index": "/mnt/sdb1/BENCOS_2023/HSA_refs/hsa_ensembl_cdna_salmon/hsa_cdna.idx",
+    "auxDir": "aux_info"
+}
