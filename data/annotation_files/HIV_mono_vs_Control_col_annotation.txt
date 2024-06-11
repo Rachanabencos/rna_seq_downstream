@@ -1,0 +1,5 @@
+Sample	disease
+C1	Control
+C2	Control
+H2	HIV_mono
+H3	HIV_mono

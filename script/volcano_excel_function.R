@@ -3,6 +3,7 @@
 #load the libraries
 library(EnhancedVolcano)
 library(openxlsx)
+library(svglite)
 
 
 
@@ -54,6 +55,7 @@ drawVolcano <- function(contrast, base, inputdf, log2fc) {
   
   #Select these columns: Ensemble Gene ID, external_gene_name, deg table like p, adjp, fc, basemean, uniprotID
   inputdf$label <- paste(inputdf$Row.names, inputdf$external_gene_name, sep = "_")
+  
   colnames(inputdf)[1] <- "gene_ID"
   
   inputdf <- inputdf[!duplicated(inputdf),]

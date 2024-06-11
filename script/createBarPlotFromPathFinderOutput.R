@@ -35,11 +35,19 @@ p <- ggplot(data, aes(x = reorder(Term_Description, -log2FoldEnrichment), y = lo
 # Get the base name of the input file
 base_name <- tools::file_path_sans_ext(basename(input_file))
 
+# Define the directory path
+output_dir <- "data/DEG_Analysis/Enrichment_Analysis/pathfindR/bar_plots/"
+output_file <- paste0(output_dir, base_name, "_barPlot.svg")
+
 # Save the plot in SVG format with the base name of the input file
-ggsave(filename = paste0(base_name, "barPlot.svg"), plot = p, width = 16, height = 24)
+ggsave(output_file, plot = p, width = 16, height = 24)
 
 # Save the plot in PDF format with the base name of the input file
-ggsave(filename = paste0(base_name, "barPlot.pdf"), plot = p, width = 16, height = 24)
+output_file <- paste0(output_dir, base_name, "_barPlot.pdf")
+
+ggsave(output_file, plot = p, width = 16, height = 24)
 
 # Save the plot in PNG format with the base name of the input file
-ggsave(filename = paste0(base_name, "barPlot.png"), plot = p, width = 16, height = 24)
+output_file <- paste0(output_dir, base_name, "_barPlot.png")
+
+ggsave(output_file, plot = p, width = 16, height = 24)

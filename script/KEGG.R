@@ -93,7 +93,7 @@ pathfindR <- pathfindR::run_pathfindR(input = df2,
                                       gene_sets = "Custom",
                                       custom_genes = hsa_kegg_genes,
                                       custom_descriptions = hsa_kegg_descriptions,
-                                      pin_name_path = "hsa_PIN.sif",
+                                      pin_name_path = "homosapiens_PIN",
                                       plot_enrichment_chart = F)
 
 if(degType == "Up" || degType == "UP" || degType == "up"){
