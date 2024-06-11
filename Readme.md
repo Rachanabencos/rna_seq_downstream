@@ -36,7 +36,7 @@ txi <- tximport::tximport(salm_dirs, type = 'salmon',
 
 ```
 
-###Creation of DESEq object for Differential gene expression analysis and perform VST normalisation
+### Creation of DESEq object for Differential gene expression analysis and perform VST normalisation
 
 ```{r echo=T}
 
@@ -62,7 +62,7 @@ norm.counts <- DESeq2::varianceStabilizingTransformation(ddsTxi, blind = F)
 normalized_counts <- SummarizedExperiment::assay(norm.counts)
 utils::write.table(normalized_counts, "data/output_files/normalized_counts.txt", sep="\t")
 ```
-###Plot the PCA from the VST normalised counts
+### Plot the PCA from the VST normalised counts
 ```{r echo=T}
 #Create PCA plot 
 pca <- BiocGenerics::plotPCA(norm.counts, intgroup = c("condition")) +
@@ -72,7 +72,7 @@ print(pca)
 grDevices::dev.off()
 ```
 
-###Plot heatmap for all samples from the top 50 variable genes
+### Plot heatmap for all samples from the top 50 variable genes
 ```{r echo =T}
 #To create heatmap for all samples
 #Source the helper function
@@ -130,7 +130,7 @@ cat("PNG device closed successfully\n")
 ```
 
 
-####DE Analysis :to create DEG table and volcano plots 
+### #DE Analysis :to create DEG table and volcano plots 
 
 ```{r echo=T}
 
@@ -179,7 +179,7 @@ for (i in 1:nrow(base_contrast)) {
 
 
 ```
-###GO Analysis 
+### GO Analysis 
 
 ```{r echo=TRUE}
 
@@ -210,7 +210,7 @@ for (file in files) {
 
 
 ```
-###KEGG Analysis
+### KEGG Analysis
 
 ```{r echo=T}
 #Create a new directory for the KEGG Analysis
