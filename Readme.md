@@ -130,7 +130,7 @@ cat("PNG device closed successfully\n")
 ```
 
 
-### #DE Analysis :to create DEG table and volcano plots 
+### DE Analysis :to create DEG table and volcano plots 
 
 ```{r echo=T}
 
@@ -255,7 +255,7 @@ for (file in files) {
 ```
 
 
-#to create barplot from the pathfindR files
+### To create barplot from the pathfindR files
 ```{r echo=T}
 #Create a new directory for the KEGG Analysis
 dir.create("data/DEG_Analysis/Enrichment_Analysis/pathfindR/bar_plots", recursive = TRUE)
@@ -288,9 +288,9 @@ for (i in seq_along(input_files)) {
 }
 ```
 
-
+### To create pathway heatmap from the pathfindR files
 ```{r echo=T}
-#to create pathway heatmap from the pathfindR files
+
 
 #Create a new directory for the KEGG Analysis
 dir.create("data/DEG_Analysis/Enrichment_Analysis/pathfindR/pathway_heatmaps", recursive = TRUE)
